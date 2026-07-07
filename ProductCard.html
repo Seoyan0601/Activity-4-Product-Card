@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+
+    /* Page background and layout */
+    body {
+      padding: 50px;
+      display: flex;
+      justify-content: center;       /* centers the card horizontally */
+      background: #bbdbc5;
+    }
+
+    /* Card container */
+    .card {
+      font-family: 'DM Sans', sans-serif;
+      background: #ffffff;
+      border-radius: 20px;                  /* rounded corners */
+      box-shadow: 0 8px 24px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06); /* soft shadow */
+      overflow: hidden;  
+      width: 280px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover animation */
+      cursor: pointer;
+    }
+
+    /* Card hover */
+    .card:hover {
+      box-shadow: 0 16px 40px rgba(0,0,0,0.14), 0 4px 10px rgba(0,0,0,0.08); /* deeper shadow on hover */
+    }
+
+    /* Product image area */
+    .img-area {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(#bbf7d0, #6ee7b7);
+      display: flex;
+      align-items: center;           
+      justify-content: center;        
+      font-size: 80px;                
+    }
+
+    /* Padding wrapper */
+    .body {
+      padding: 1.25rem;
+    }
+
+    /* Product name */
+    h1 {
+      color: #1e1e2e;            
+      margin: 0 0 4px;
+    }
+
+    /* Product price*/
+    h2 {
+      color: #16a34a;                  
+      margin: 0 0 10px;
+    }
+
+    /* Product description */
+    p {
+      font-size: 16px;
+      color: #6b7280;              
+      line-height: 1.5;                /* spacing */
+      margin: 0 0 16px;
+    }
+
+    /* Buy now button */
+    .btn {
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 10px;             
+      border: none;
+      background: #16a34a;            
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover {
+      background: #15803d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="img-area">👟</div>
+    <div class="body">
+      <h1>SpeedFlex Pro Runner</h1>
+      <h2>₱3,499</h2>
+      <p >Ultra-lightweight running shoes with energy-return foam, seamless knit upper, and all-terrain grip for every stride.</p>
+      <button class="btn">Buy now</button>
+    </div>
+  </div>
+
+</body>
+</html>
